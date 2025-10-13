@@ -720,10 +720,6 @@ body {
     width: 100%;
     text-align: center;
   }
-
-  .imagen-izquierda img {
-    width: 85%;
-  }
 }
 
 @media (min-width: 669px) and (max-width: 1024px) {
@@ -783,3 +779,4 @@ body {
     font-size: 1.5rem;
   }
 }
+
