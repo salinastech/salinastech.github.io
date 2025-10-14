@@ -93,7 +93,7 @@ body {
   line-height: 1.6;
   background-color: #f6f6f6;
   color: #111;
-  cursor: default;
+  cursor: none;
 }
 
 .imagen-texto-contenido {
@@ -778,5 +778,6 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 
