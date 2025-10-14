@@ -16,6 +16,7 @@
   text-align: center;
   object-fit: cover;
   display: block;
+  padding:initial;
   margin-bottom: 20px;
   font-family: var(--font-bebas);
   font-size: 3rem;
@@ -130,3 +131,4 @@ img:hover {
     font-size: 1.5rem;
   }
 }
+
