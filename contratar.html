@@ -142,7 +142,7 @@
           </h2>
           <hr class="division" data-aos="fade-up" data-aos-delay="350" />
           <div class="formulario" data-aos="fade-up" data-aos-delay="350">
-            <form action="contacto.php" method="POST">
+            <form id="formulario-whatsapp">
               <label for="nombre">Nombre:</label>
               <input
                 type="text"
@@ -191,14 +191,14 @@
                 required
               ></textarea>
 
-              <input type="submit" value="Enviar Mensaje" />
+              <input type="submit" value="Enviar Mensaje por WhatsApp" />
             </form>
           </div>
         </div>
       </section>
     </main>
 
-<footer class="pie">
+    <footer class="pie">
       <div class="contenedor-pie">
         <p>© 2025 Salinas Tech.<br />Todos los derechos reservados.</p>
       </div>
@@ -213,6 +213,32 @@
         once: true,
       });
     </script>
+    <script>
+      document
+        .getElementById("formulario-whatsapp")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const numeroWhatsApp = "59164846140";
+
+          const nombre = document.getElementById("nombre").value;
+          const telefono = document.getElementById("telefono").value;
+          const email = document.getElementById("email").value;
+          const servicio = document.getElementById("servicio").value;
+          const mensaje = document.getElementById("mensaje").value;
+
+          let texto = "👋 ¡Formulario de contacto!\n\n";
+          texto += `Nombre: ${nombre}\n`;
+          texto += `Teléfono: ${telefono}\n`;
+          texto += `Email: ${email}\n`;
+          texto += `Servicio de Interés: ${servicio}\n\n`;
+          texto += `Descripción del Proyecto:\n${mensaje}`;
+
+          const textoCodificado = encodeURIComponent(texto);
+          const urlWhatsApp = `https://wa.me/${59164846140}?text=${textoCodificado}`;
+
+          window.open(urlWhatsApp, "_blank");
+        });
+    </script>
   </body>
 </html>
-
