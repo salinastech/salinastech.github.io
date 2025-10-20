@@ -196,7 +196,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 40px 0 0;
 }
 
 .marca-navegacion {
@@ -721,7 +721,7 @@ body {
   }
 }
 
-@media (min-width: 669px) and (max-width: 1024px) {
+@media (min-width: 669px) and (max-width: 1600px) {
   .alternar-menu {
     display: flex;
   }
@@ -735,11 +735,11 @@ body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1600px) {
   a,
   button,
   input[type="submit"] {
-    cursor: pointer; /* Usar el puntero estándar de enlace */
+    cursor: pointer; 
   }
 
   .alternar-menu {
@@ -778,6 +778,3 @@ body {
     font-size: 1.5rem;
   }
 }
-
-
-
