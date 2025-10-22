@@ -128,22 +128,9 @@
                 duration: 1000,
                 once: true
             });
-            
-            document.getElementById('alternar-menu').addEventListener('click', function() {
-                document.getElementById('menu-principal').classList.toggle('activo');
-            });
-
-            const desplegable = document.querySelector('.desplegable');
-            const alternarDesplegable = document.querySelector('.alternar-desplegable');
-
-            alternarDesplegable.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    desplegable.classList.toggle('activo');
-                }
-            });
         });
     </script>
 </body>
 
 </html>
+
