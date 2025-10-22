@@ -626,14 +626,6 @@ body {
   transform: scale(1.01);
 }
 
-@media (max-width: 650px) {
-  section {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 0;
-  }
-}
-
 @media (max-width: 768px) {
   .contenedor-menu {
     flex-direction: column;
@@ -788,4 +780,5 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
