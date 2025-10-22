@@ -210,6 +210,7 @@ body {
 
 .navegacion-principal {
   display: block;
+  padding: 0 20px;
 }
 
 .navegacion-principal ul {
@@ -787,3 +788,4 @@ body {
     font-size: 1.5rem;
   }
 }
+
