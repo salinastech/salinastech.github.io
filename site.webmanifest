@@ -1,21 +1,24 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Salinas Tech | Inicio",
+  "short_name": "Salinas Tech",
+  "description": "Salinas Tech ofrece servicios profesionales de diseño web, desarrollo de software y diseño gráfico. Impulsa tu negocio con soluciones creativas y funcionales.",
+  "start_url": "/?source=pwa",
   "icons": [
     {
-      "src": "/https://salinastech.com/web-app-manifest-192x192.png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
-      "src": "/https://salinastech.com/web-app-manifest-512x512.png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     }
   ],
-  "theme_color": "#000000",
+  "theme_color": "#4A148C",
   "background_color": "#000000",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait"
 }
