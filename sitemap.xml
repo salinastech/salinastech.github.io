@@ -63,7 +63,21 @@
         <loc>https://www.salinastech.com/animacion.html</loc>
         <lastmod>2025-10-15</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://rrss.salinastech.com/index.html</loc>
+        <lastmod>2025-11-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://superluis.salinastech.com/index.html</loc>
+        <lastmod>2025-11-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 
     </urlset>
