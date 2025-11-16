@@ -16,7 +16,8 @@
       "type": "image/png",
       "purpose": "maskable"
     }
- {
+,  <-- COMA AÑADIDA AQUÍ
+    {
       "src": "/www.salinastech.com/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
