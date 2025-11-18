@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Economico Broaster",
       description: "",
-      price: "16 BOB",
+      price: "15 BOB",
       image: "img/m1.png",
     },
     {
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Hamburguesa Simple",
       description: "",
-      price: "16 BOB",
+      price: "18 BOB",
       image: "img/m15.png",
     },
     {
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Hamburguesa Doble",
       description: "",
-      price: "16 BOB",
+      price: "26 BOB",
       image: "img/m17.png",
     },
     {
