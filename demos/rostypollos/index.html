@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosty Pollos - Comida Rapida</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      as="font"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" ... />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" ... />   
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.js"
+      as="script"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <h1>ROSTY POLLOS</h1>
+        </a>
+      </div>
+
+      <div class="header-right">
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#promociones">Promoción</a></li>
+            <li><a href="#contacto">Delivery</a></li>
+            <li><a href="https://wa.me/59177111652" target="_blank" aria-label="Hacer Pedido por WhatsApp"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section" id="inicio">
+      <br />
+      <div class="hero-content" data-aos="fade-right" data-aos-delay="50">
+        <h1>El Mejor Pollo de Santa Cruz</h1>
+        <p>
+          Conoce el verdadero sabor, disfruta de nuestro menu.
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Busca tu plato favorito..." />
+          <button>Buscar</button>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/image.png" alt="Imagen Rosty Pollos" />
+      </div>
+    </section>
+
+    <section
+      class="menu-section"
+      id="menu"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      <br />
+      <h2 class="title">Nuestro Menú</h2>
+      <div class="menu-items-container"></div>
+    </section>
+    <br />
+
+    <section>
+      <div class="promo-section" id="promociones">
+      <h2>Ofertas</h2>
+      <div class="promo-container">
+        <div class="promo-card" data-aos="zoom-in" data-aos-delay="50">
+          <img src="img/oferta/ps1.png"/>
+          <h3>Promo Lunes</h3>
+          <p><strong>ECONOMICO</strong></p>
+          <p>1 ECONOMICO + MINI<br>BROASTER / BRASA</p>
+        </div>
+        <div class="promo-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/oferta/ps2.png"/>
+          <h3>Promo Martes</h3>
+          <p><strong>DUO PERFECTO</strong></p>          
+          <p>2 CUARTOS DE POLLO <br> + GASEOSA 1 LITRO</p>
+        </div>
+        <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
+          <img src="img/oferta/ps3.png"/>
+          <h3>Promo Miercoles</h3>
+          <p><strong>1 CUARTO DE POLLO</strong></p>          
+          <p>BROASTER / BRASA <br>+ POPULAR 600M</p>
+        </div>
+        <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
+          <img src="img/oferta/ps4.png"/>
+          <h3>Promo Jueves</h3>
+          <p><strong>DOBLE SALCHIPOLLO</strong></p>            
+          <p>+ GASEOSA 1.5 LITROS</p>
+        </div>
+        <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
+          <img src="img/oferta/ps5.png"/>
+          <h3>Promo Viernes</h3>
+           <p><strong>4 CUARTOS</strong></p>             
+          <p>BROASTER / BRASA<br>+ GASEOSA 2L</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="contact-section"
+      id="contacto"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <br />
+      <h2>Delivery</h2>
+      <div class="contact-form-container">
+<form class="contact-form">
+  <label for="nombre_cliente">Nombre:</label>
+  <input type="text" id="nombre_cliente" name="nombre_cliente" required />
+
+  <label for="numero_whatsapp">Número de WhatsApp:</label>
+  <input
+    type="tel"
+    id="numero_whatsapp"
+    name="numero_whatsapp"
+    required
+    placeholder="Ej: 591764846140"
+  />
+
+  <label for="descripcion">Descripción del Pedido:</label>
+  <textarea
+    id="descripcion"
+    name="descripcion"
+    rows="5"
+    required
+    placeholder="Ej: 2 lomitos."></textarea>
+
+  <a
+    href="https://wa.me/59177111652?text=Hola!%20Me%20llamo%20[NOMBRE]%20y%20me%20gustaría%20ordenar%20lo%20siguiente:%20[DESCRIPCION]%20Mi%20número%20es%20[NUMERO]"
+    class="btn-submit"
+    id="whatsapp-link"
+    target="_blank">Enviar</a>
+
+</form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Rosty Pollos. <br> Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            once: false,
+            duration: 1200,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
