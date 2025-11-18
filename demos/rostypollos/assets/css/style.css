@@ -154,7 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-image: url("/fondo.png");
+    background-image: url("../fondo.png");
     padding: 100px 5%;
     gap: 40px;
   }
@@ -1271,3 +1271,4 @@ footer {
     display: none;
   }
 }
+
