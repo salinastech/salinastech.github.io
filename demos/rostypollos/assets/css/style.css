@@ -128,7 +128,7 @@ body {
 
   .nav-menu a {
     text-decoration: none;
-    color: #555;
+    color: #fff;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
@@ -256,7 +256,7 @@ body {
   }
 
   .menu-item {
-    background-color: #222;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: var(--shadow-light);
     padding: 25px;
@@ -280,12 +280,12 @@ body {
   .menu-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
   }
 
   .menu-item .price {
     font-size: 1.3em;
-    color:#ffffff;
+    color:#000000;
     font-weight: bold;
   }
 
