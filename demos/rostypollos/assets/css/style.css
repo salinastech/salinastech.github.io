@@ -48,7 +48,7 @@ body {
   }
 
   body {
-    font-family: "Arial", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--light-bg);
     color: var(--text-color-dark);
     line-height: 1.6;
@@ -154,7 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-image: url("../fondo.png");
+    background-image: url("../../fondo.png");
     padding: 100px 5%;
     gap: 40px;
   }
@@ -1271,4 +1271,5 @@ footer {
     display: none;
   }
 }
+
 
