@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Economico Brasa",
       description: "",
-      price: "16 BOB",
+      price: "15 BOB",
       image: "img/m2.png",
     },
     {
@@ -281,3 +281,4 @@ function updateWhatsappLink() {
 }
 
 updateWhatsappLink();
+
