@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.salinastech.com/sitemap.xml
+Sitemap: /sitemap.xml
