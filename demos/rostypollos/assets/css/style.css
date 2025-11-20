@@ -107,7 +107,7 @@ body {
 
   .logo h1 {
     font-size: 1.8em;
-    color: var(--secondary-color);
+    color: var(--secundary-color);
   }
 
   .logo a {
@@ -128,7 +128,7 @@ body {
 
   .nav-menu a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
@@ -171,7 +171,7 @@ body {
 
   .hero-content h1 {
     font-size: 4em;
-    color: var(--secondary-color);
+    color: #000000;
     line-height: 1.1;
     margin-bottom: 20px;
   }
@@ -202,7 +202,7 @@ body {
   }
 
   .search-box button {
-    background-color: var(--primary-color);
+    background-color: #ff0000;
     color: var(--text-color-light);
     border: none;
     padding: 12px 30px;
@@ -1271,6 +1271,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
