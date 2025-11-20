@@ -1,4 +1,4 @@
-u:root {
+:root {
   --primary-color: #ff0000;
   --secondary-color: #ffffff;
   --tertiary-color: #000000;
@@ -82,7 +82,7 @@ body {
 
   a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--secundary-color);
     transition: color 0.3s ease;
   }
 
@@ -203,7 +203,7 @@ body {
 
   .search-box button {
     background-color: #ff0000;
-    color: var(--text-color-light);
+    color: #fff;
     border: none;
     padding: 12px 30px;
     border-radius: 50px;
@@ -710,7 +710,7 @@ section {
 
 a {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--secundary-color);
   transition: color 0.3s ease;
 }
 
@@ -1170,7 +1170,7 @@ footer {
     width: 70%;
     max-width: 350px;
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
     padding-top: 100px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
     transition: right 0.4s ease;
@@ -1271,6 +1271,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
