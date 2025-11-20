@@ -280,7 +280,7 @@ body {
   .menu-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: var(--tertiary-color);
   }
 
   .menu-item .price {
@@ -1271,6 +1271,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
