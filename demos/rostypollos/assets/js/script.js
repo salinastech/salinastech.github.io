@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Economico Brasa",
       description: "",
-      price: "15 BOB",
+      price: "16 BOB",
       image: "img/m2.png",
     },
     {
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "img/m21.png",
     },
     {
-      name: "Piipocas de Pollo",
+      name: "Pipocas de Pollo",
       description: "",
       price: "15 BOB",
       image: "img/m22.png",
@@ -183,6 +183,12 @@ document.addEventListener("DOMContentLoaded", () => {
       price: "20 BOB",
       image: "img/m25.png",
     },
+    {
+      name: "Chicharron de pollo",
+      description: "",
+      price: "20 BOB",
+      image: "img/m26.png",
+    }
   ];
 
   const createMenuItem = (item) => {
@@ -281,4 +287,3 @@ function updateWhatsappLink() {
 }
 
 updateWhatsappLink();
-
