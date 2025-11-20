@@ -1,4 +1,4 @@
-:root {
+u:root {
   --primary-color: #ff0000;
   --secondary-color: #ffffff;
   --tertiary-color: #000000;
@@ -280,7 +280,7 @@ body {
   .menu-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--tertiary-color);
+    color: #ffffff;
   }
 
   .menu-item .price {
@@ -1271,6 +1271,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
