@@ -27,6 +27,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+       .social-media-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.social-media-container i {
+  font-size: 35px;
+  color: #5c996d;
+  transition: transform 0.3s ease;
+}
+
+.social-media-container i:hover {
+  transform: translateY(-3px);
+  color: #007bff;
+} 
+    </style>
 </head>
 
 <body>
@@ -261,7 +283,7 @@
                             aria-label="Número de teléfono o WhatsApp" />
                     </div>
                     <div class="form-group">
-                        <label for="service">Servicio de Interés</label>
+                        <label for="service">Servicio</label>
                         <select id="service" name="service" required
                             aria-label="Servicio de interés">
                             <option value="">Selecciona un Servicio</option>
@@ -297,7 +319,7 @@
           </p>
           
           <div
-            class="social-media-container"
+            class="social-media-container" 
           >
             <a
               href="https://www.facebook.com/share/1ARQEyGAcW/"
@@ -321,8 +343,7 @@
               href="https://www.tiktok.com/@bellabigail.bo?_r=1&_t=ZM-91fayTjBr1X"
               target="_blank"
               aria-label="TikTok"
-              ><i class="fab fa-tiktok"></i
-            ></a>
+              ><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
         </section>
@@ -377,7 +398,7 @@
                 const mensaje = document.getElementById('message').value;
 
                 const mensajeWhatsApp = `
-*--- SOLICITUD DE CITA BELL ABIGAIL ---*
+* SOLICITUD DE CITA BELL ABIGAIL *
 *Nombre:* ${nombre}
 *Teléfono:* ${telefono}
 *Servicio de Interés:* ${servicio}
