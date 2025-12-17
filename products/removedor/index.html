@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salinas Tech | Herramienta removedor de fondo</title>
+    <meta name="description"
+        content="La herramienta Removedor de Fondo te permite eliminar el fondo de cualquier imagen de forma rápida y gratuita. Sube tu foto y descarga el resultado con fondo transparente en segundos.">
+    <meta name="author" content="Salinas Tech">
+    <meta name="keywords"
+        content="remover fondo, quitar fondo, eliminador de fondo, background remover, fondo transparente, imagen sin fondo, herramienta online, gratis">
+
+    <meta property="og:title" content="Removedor de Fondo Pro | Elimina fondos de imágenes online gratis">
+    <meta property="og:description"
+        content="La herramienta Removedor de Fondo Pro te permite eliminar el fondo de cualquier imagen de forma rápida y gratuita. Sube tu foto y descarga el resultado con fondo transparente en segundos.">
+    <meta property="og:image" content="https://i.ibb.co/93V3s9hs/icono.png">
+    <meta property="og:url" content="https://www.salinastech.com/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Removedor de Fondo Pro | Elimina fondos de imágenes online gratis">
+    <meta name="twitter:description"
+        content="La herramienta Removedor de Fondo Pro te permite eliminar el fondo de cualquier imagen de forma rápida y gratuita. Sube tu foto y descarga el resultado con fondo transparente en segundos.">
+    <meta name="twitter:image" content="https://i.ibb.co/93V3s9hs/icono.png">
+
+    <link rel="icon" type="image/png" href="https://i.ibb.co/93V3s9hs/icono.png">
+
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Salinas Tech" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="barra-navegacion">
+        <div class="contenedor-menu">
+            <a href="index.html" class="marca-navegacion">SALINAS TECH</a>
+
+            <div class="alternar-menu" id="alternar-menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+
+            <nav class="navegacion-principal" id="menu-principal">
+                <ul id="menu-principal-ul">
+                    <li>
+                        <a href="../index.html" data-aos="fade-down" data-aos-delay="100">Inicio</a>
+                    </li>
+                    <li class="desplegable">
+                        <a href="#" class="alternar-desplegable" data-aos="fade-down" data-aos-delay="200">Servicios</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="disenodigital.html">Diseño Digital</a></li>
+                            <li>
+                                <a href="disenopublicitario.html">Diseño Publicitario</a>
+                            </li>
+                            <li><a href="disenouiux.html">Diseño UI/UX</a></li>
+                            <li><a href="animacion.html">Animación</a></li>
+                            <li><a href="desarrolloweb.html">Desarrollo Web</a></li>
+                            <li>
+                                <a href="desarrollodesistemasweb.html">Desarrollo de Sistemas Web</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../productos.html" data-aos="fade-down" data-aos-delay="300">Productos</a>
+                    </li>
+                    <li>
+                        <a href="../contratar.html" data-aos="fade-down" data-aos-delay="300">Contratar</a>
+                    </li>
+                    <li>
+                        <a href="../contacto.html" data-aos="fade-down" data-aos-delay="400">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor">
+                <h1>Removedor de Fondo</h1>
+
+                <label for="imagenInput" class="file-label" id="fileLabel">
+                    Seleccionar Imagen
+                </label>
+                <input type="file" id="imagenInput" accept="image/*">
+                <br>
+                <button onclick="procesarImagen()" id="processButton">Procesar Imagen</button>
+
+                <div id="mensaje"></div>
+                <div class="spinner" id="cargando"></div>
+
+                <div id="resultado">
+                    <img id="imagenOutput" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        alt="Aquí aparecerá el resultado" style="max-width: 300px;">
+
+                    <a id="downloadLink" href="#" download="imagen-sin-fondo.png" style="display:none; margin-top:15px;"
+                        class="file-label">
+                        Descargar Imagen
+                    </a>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor-pie">
+            <p>&copy; 2025 Salinas Tech.<br>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('imagenInput').addEventListener('change', function () {
+            const fileLabel = document.getElementById('fileLabel');
+            if (this.files.length > 0) {
+                fileLabel.textContent = this.files[0].name;
+                fileLabel.style.borderColor = 'var(--color-secondary)';
+            } else {
+                fileLabel.textContent = 'Seleccionar Imagen';
+                fileLabel.style.borderColor = 'var(--color-primary)';
+            }
+        });
+
+        async function procesarImagen() {
+            const input = document.getElementById('imagenInput');
+            const mensaje = document.getElementById('mensaje');
+            const cargando = document.getElementById('cargando');
+            const processButton = document.getElementById('processButton');
+            const imagenOutput = document.getElementById('imagenOutput');
+            const downloadLink = document.getElementById('downloadLink');
+
+            downloadLink.style.display = 'none';
+            imagenOutput.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+
+            if (input.files.length === 0) {
+                mensaje.textContent = "Por favor, selecciona una imagen primero.";
+                return;
+            }
+
+            const imagenFile = input.files[0];
+
+            cargando.style.display = 'block';
+            processButton.disabled = true;
+            mensaje.textContent = "Procesando...";
+
+            const formData = new FormData();
+            formData.append('image_file', imagenFile);
+            formData.append('size', 'auto');
+            formData.append('format', 'png');
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'X-Api-Key': API_KEY
+                    },
+                    body: formData
+                });
+
+                const blob = await response.blob();
+
+                if (response.ok) {
+                    const objectURL = URL.createObjectURL(blob);
+                    imagenOutput.src = objectURL;
+                    mensaje.textContent = "¡Fondo eliminado exitosamente!.";
+
+                    downloadLink.href = objectURL;
+                    downloadLink.download = imagenFile.name.replace(/\.[^/.]+$/, "") + "-sin-fondo.png";
+                    downloadLink.style.display = 'inline-block';
+
+                } else {
+                    const errorText = await blob.text();
+                    mensaje.textContent = `Error de API: ${response.status} - ${errorText.substring(0, 100)}...`;
+                }
+
+            } catch (error) {
+                mensaje.textContent = "Error de conexión: " + error.message;
+            } finally {
+                cargando.style.display = 'none';
+                processButton.disabled = false;
+            }
+        }
+    </script>
+    <script src="../recurso/script.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
