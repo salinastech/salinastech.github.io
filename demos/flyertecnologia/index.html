@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salinas Tech | Flyers de Tecnología</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+  <link rel="shortcut icon" href="/icon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Salinas Tech" />
+  <link rel="manifest" href="/icon/site.webmanifest" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script" />
+</head>
+
+<body>
+  <header class="barra-navegacion" role="banner">
+    <div class="contenedor-menu">
+      <a href="../../index.html" class="marca-navegacion">SALINAS TECH</a>
+
+      <div class="alternar-menu" id="alternar-menu">
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <div class="barra"></div>
+      </div>
+
+      <nav class="navegacion-principal" id="menu-principal">
+        <ul id="menu-principal-ul">
+          <li>
+            <a href="../../index.html" data-aos="fade-down" data-aos-delay="100">Inicio</a>
+          </li>
+          <li class="desplegable">
+            <a href="#" class="alternar-desplegable" data-aos="fade-down" data-aos-delay="200">Servicios</a>
+            <ul class="menu-desplegable">
+              <li><a href="../../disenodigital.html">Diseño Digital</a></li>
+              <li>
+                <a href="../../disenopublicitario.html">Diseño Publicitario</a>
+              </li>
+              <li><a href="../../disenouiux.html">Diseño UI/UX</a></li>
+              <li><a href="../../animacion.html">Animación</a></li>
+              <li><a href="../../desarrolloweb.html">Desarrollo Web</a></li>
+              <li>
+                <a href="../../desarrollodesistemasweb.html">Desarrollo de Sistemas Web</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../productos.html" data-aos="fade-down" data-aos-delay="300">Productos</a>
+          </li>
+          <li>
+            <a href="../../contratar.html" data-aos="fade-down" data-aos-delay="300">Contratar</a>
+          </li>
+          <li>
+            <a href="../../contacto.html" data-aos="fade-down" data-aos-delay="400">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="flyer-section">
+      <div class="flyer-main-title">
+        <h2>FLYER<br />TECNOLOGIA</h2>
+      </div>
+      <section>
+        <div class="contenedor-carta">
+          <h2 class="seccion-titulo" data-aos="fade-up" data-aos-delay="300">
+            Diseños con Visión Digital
+          </h2>
+          <hr class="division" data-aos="fade-up" data-aos-delay="350" />
+          <p data-aos="fade-up" data-aos-delay="400">
+            En Salinas Tech, fusionamos la innovación tecnológica con el diseño gráfico de vanguardia.
+            Aquí te presento una selección de mis trabajos en diseño de flyers,
+            material promocional y branding visual para empresas y productos tecnológicos.
+            Estos proyectos demuestran mi habilidad para comunicar conceptos complejos de manera clara y atractiva,
+            utilizando tipografías limpias y paletas de colores futuristas que proyectan profesionalismo e innovación.
+            ¡Prepárate para ver cómo la tecnología se traduce en un diseño impactante!
+          </p>
+        </div>
+      </section>
+      <div class="flyer-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="flyer-card">
+          <img src="f1.png" class="imagen-zoom" />
+        </div>
+        <div class="flyer-card" data-aos="fade-up" data-aos-delay="150">
+          <img src="f2.png" class="imagen-zoom" />
+        </div>
+        <div class="flyer-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="f3.png" class="imagen-zoom" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="../../script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      AOS.init({
+        duration: 1200,
+      });
+    });
+  </script>
+</body>
+
+</html>
