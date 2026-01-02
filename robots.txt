@@ -1,2 +1,11 @@
 User-agent: *
+Disallow:
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
 Sitemap: https://salinastech.com/sitemap.xml
+
