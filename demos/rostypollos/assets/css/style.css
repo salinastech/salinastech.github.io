@@ -1079,9 +1079,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
 
   .header {
     padding: 20px 20px;
