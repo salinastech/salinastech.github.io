@@ -24,6 +24,10 @@ body {
     line-height: 1.6;
 }
 
+img{
+    width: 100%;
+}
+
 a, button, select, .file-label, option {
     cursor: pointer !important; 
 }
@@ -173,4 +177,5 @@ button:hover {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
 }
