@@ -191,7 +191,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    height: 40px;
     overflow: hidden;
 }
 
@@ -206,7 +206,7 @@ button:hover {
         width: 100%;
     }
 
-    .ads-persistente { height: 100px; }
+    .ads-persistente { height: 40px; }
     body { padding-bottom: 130px; }
 }
 
@@ -226,4 +226,5 @@ button:hover {
     100% { transform: rotate(360deg); }
 
 }
+
 
