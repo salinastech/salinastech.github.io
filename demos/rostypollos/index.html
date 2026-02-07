@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rosty Pollos - Comida Rapida en Santa Cruz</title>
@@ -8,172 +8,148 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link rel="preconnect" href="https://unpkg.com" />
 
     <link rel="preload" as="image" href="img/image.png" />
-
     <link rel="stylesheet" href="assets/css/style.css" />
     
     <link 
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD/CDKFE9T+gYJd/g/eJ/z6tEmtP+B2tA+r0I7U3bX7z6K75f9OqX9z7f1O1lQ==" 
-      crossorigin="anonymous" 
       referrerpolicy="no-referrer" 
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
-      <div class="logo">
-        <a href="#inicio">
-          <h1>ROSTY POLLOS</h1>
-        </a>
-      </div>
-
-      <div class="header-right">
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#menu">Menú</a></li>
-            <li><a href="#promociones">Promoción</a></li>
-            <li><a href="#contacto">Delivery</a></li>
-            <li>
-              <a
-                href="https://wa.me/59177111652"
-                target="_blank"
-                aria-label="Hacer Pedido por WhatsApp"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div class="logo">
+            <a href="#inicio">
+                <h1>ROSTY POLLOS</h1>
+            </a>
         </div>
-      </div>
+
+        <div class="header-right">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#promociones">Promoción</a></li>
+                    <li><a href="#contacto">Delivery</a></li>
+                    <li>
+                        <a href="https://wa.me/59177111652" target="_blank" aria-label="Hacer Pedido por WhatsApp">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
     </header>
 
     <section class="hero-section" id="inicio">
-      <div class="hero-content">
-        <h1>El Mejor Pollo de Santa Cruz</h1>
-        <p>Conoce el verdadero sabor, disfruta de nuestro menú.</p>
-        <div class="search-box">
-          <input type="text" placeholder="Busca tu plato favorito..." aria-label="Busca tu plato favorito" />
-          <button type="submit">Buscar</button>
+        <div class="hero-content">
+            <h1>El Mejor Pollo de Santa Cruz</h1>
+            <p>Conoce el verdadero sabor, disfruta de nuestro menú.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Busca tu plato favorito..." aria-label="Busca tu plato favorito" />
+                <button type="submit">Buscar</button>
+            </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="img/image.png" alt="Plato de pollo frito y asado de Rosty Pollos" fetchpriority="high" />
-      </div>
-    </section>
-
-    <section
-      class="menu-section"
-      id="menu"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      <h2 class="title">Nuestro Menú</h2>
-      <div class="menu-items-container">
-          </div>
-    </section>
-
-    <section class="promociones-section">
-      <div class="promo-section" id="promociones">
-        <h2>Ofertas</h2>
-        <div class="promo-container">
-          <div class="promo-card" data-aos="zoom-in" data-aos-delay="50">
-            <img src="img/oferta/ps1.png" alt="Promo Lunes, Económico" loading="lazy" />
-            <h3>Promo Lunes</h3>
-            <p><strong>ECONÓMICO</strong></p>
-            <p>1 ECONÓMICO + MINI<br />BROASTER / BRASA</p>
-          </div>
-          <div class="promo-card" data-aos="zoom-in" data-aos-delay="100">
-            <img src="img/oferta/ps2.png" alt="Promo Martes, Duo Perfecto" loading="lazy" />
-            <h3>Promo Martes</h3>
-            <p><strong>DÚO PERFECTO</strong></p>
-            <p>2 CUARTOS DE POLLO <br />+ GASEOSA 1 LITRO</p>
-          </div>
-          <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
-            <img src="img/oferta/ps3.png" alt="Promo Miércoles" loading="lazy" />
-            <h3>Promo Miércoles</h3>
-            <p><strong>1 CUARTO DE POLLO</strong></p>
-            <p>BROASTER / BRASA <br />+ POPULAR 600M</p>
-          </div>
-          <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
-            <img src="img/oferta/ps4.png" alt="Promo Jueves" loading="lazy" />
-            <h3>Promo Jueves</h3>
-            <p><strong>DOBLE SALCHIPOLLO</strong></p>
-            <p>+ GASEOSA 1.5 LITROS</p>
-          </div>
-          <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
-            <img src="img/oferta/ps5.png" alt="Promo Viernes" loading="lazy" />
-            <h3>Promo Viernes</h3>
-            <p><strong>4 CUARTOS</strong></p>
-            <p>BROASTER / BRASA<br />+ GASEOSA 2L</p>
-          </div>
+        <div class="hero-image">
+            <img src="img/image.png" alt="Plato de pollo frito y asado de Rosty Pollos" fetchpriority="high" />
         </div>
-      </div>
     </section>
 
-    <section class="contact-section" id="contacto" data-aos="fade-up">
-      <h2>Delivery</h2>
-      <div class="contact-form-container">
-        <form class="contact-form" id="delivery-form">
-          <label for="nombre_cliente">Nombre:</label>
-          <input type="text" id="nombre_cliente" name="nombre_cliente" required />
+    <section class="menu-section" id="menu">
+        <h2 class="title">Nuestro Menú</h2>
+        <div class="menu-items-container">
+            </div>
+    </section>
 
-          <label for="numero_whatsapp">Número de WhatsApp:</label>
-          <input type="tel" id="numero_whatsapp" name="numero_whatsapp" required placeholder="Ej: 591..." pattern="[0-9]{8,15}" />
+    <section class="promociones-section" id="promociones">
+        <div class="promo-section">
+            <h2>Ofertas</h2>
+            <div class="promo-container">
+                <div class="promo-card">
+                    <img src="img/oferta/ps1.png" alt="Promo Lunes, Económico" loading="lazy" />
+                    <h3>Promo Lunes</h3>
+                    <p><strong>ECONÓMICO</strong></p>
+                    <p>1 ECONÓMICO + MINI<br />BROASTER / BRASA</p>
+                </div>
+                <div class="promo-card">
+                    <img src="img/oferta/ps2.png" alt="Promo Martes, Duo Perfecto" loading="lazy" />
+                    <h3>Promo Martes</h3>
+                    <p><strong>DÚO PERFECTO</strong></p>
+                    <p>2 CUARTOS DE POLLO <br />+ GASEOSA 1 LITRO</p>
+                </div>
+                <div class="promo-card">
+                    <img src="img/oferta/ps3.png" alt="Promo Miércoles" loading="lazy" />
+                    <h3>Promo Miércoles</h3>
+                    <p><strong>1 CUARTO DE POLLO</strong></p>
+                    <p>BROASTER / BRASA <br />+ POPULAR 600M</p>
+                </div>
+                <div class="promo-card">
+                    <img src="img/oferta/ps4.png" alt="Promo Jueves" loading="lazy" />
+                    <h3>Promo Jueves</h3>
+                    <p><strong>DOBLE SALCHIPOLLO</strong></p>
+                    <p>+ GASEOSA 1.5 LITROS</p>
+                </div>
+                <div class="promo-card">
+                    <img src="img/oferta/ps5.png" alt="Promo Viernes" loading="lazy" />
+                    <h3>Promo Viernes</h3>
+                    <p><strong>4 CUARTOS</strong></p>
+                    <p>BROASTER / BRASA<br />+ GASEOSA 2L</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <label for="descripcion">Descripción del Pedido:</label>
-          <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Ej: 2 lomitos..."></textarea>
+    <section class="contact-section" id="contacto">
+        <h2>Delivery</h2>
+        <div class="contact-form-container">
+            <form class="contact-form" id="delivery-form">
+                <label for="nombre_cliente">Nombre:</label>
+                <input type="text" id="nombre_cliente" name="nombre_cliente" required />
 
-          <button type="submit" class="btn-submit" id="whatsapp-submit">Enviar Pedido por WhatsApp</button>
-        </form>
-      </div>
+                <label for="numero_whatsapp">Número de WhatsApp:</label>
+                <input type="tel" id="numero_whatsapp" name="numero_whatsapp" required placeholder="Ej: 591..." pattern="[0-9]{8,15}" />
 
-      <section class="map-section">
-        <iframe
-          src="about:blank" 
-          data-src="https://www.google.com/maps/embed?pb=..." 
-          style="max-width: 100%; width: 100%; height: 250px; border: 0;"
-          allowfullscreen=""
-          loading="lazy"
-          title="Ubicación"
-        ></iframe>
-      </section>
+                <label for="descripcion">Descripción del Pedido:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Ej: 2 lomitos..."></textarea>
+
+                <button type="submit" class="btn-submit" id="whatsapp-submit">Enviar Pedido por WhatsApp</button>
+            </form>
+        </div>
+
+        <section class="map-section">
+            <iframe
+                src="about:blank" 
+                data-src="https://www.google.com/maps/embed?pb=..." 
+                style="max-width: 100%; width: 100%; height: 250px; border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Ubicación"
+            ></iframe>
+        </section>
     </section>
 
     <footer>
-      <p>© 2025 Rosty Pollos. <br />Todos los derechos reservados.</p>
+        <p>© 2025 Rosty Pollos. <br />Todos los derechos reservados.</p>
     </footer>
 
     <script src="assets/js/script.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    
     <script>
-      document.getElementById('delivery-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          const nombre = document.getElementById('nombre_cliente').value;
-          const numero = document.getElementById('numero_whatsapp').value;
-          const descripcion = document.getElementById('descripcion').value;
-          const telefonoWhatsApp = '59177111652';
-          const mensaje = `Hola! Me llamo ${nombre} y me gustaría ordenar: ${descripcion}. Contacto: ${numero}`;
-          window.open(`https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`, '_blank');
-      });
-
-      window.addEventListener("load", () => {
-        if (typeof AOS !== "undefined") {
-          AOS.init({
-            once: true, 
-            duration: 1000,
-          });
-        }
-      });
+        document.getElementById('delivery-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre_cliente').value;
+            const numero = document.getElementById('numero_whatsapp').value;
+            const descripcion = document.getElementById('descripcion').value;
+            const telefonoWhatsApp = '59177111652';
+            const mensaje = `Hola! Me llamo ${nombre} y me gustaría ordenar: ${descripcion}. Contacto: ${numero}`;
+            window.open(`https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`, '_blank');
+        });
     </script>
-  </body>
+</body>
 </html>
