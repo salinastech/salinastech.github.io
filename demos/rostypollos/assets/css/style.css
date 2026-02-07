@@ -1272,11 +1272,10 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
+@media (min-width: 1024px) {
+  .hero-section {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center; 
+  }
+}
