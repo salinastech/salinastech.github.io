@@ -470,7 +470,7 @@ body {
     .hero-section {
       flex-direction: column;
       text-align: center;
-      padding: 60px 5%;
+      padding: 60px 3%;
       gap: 20px;
     }
 
