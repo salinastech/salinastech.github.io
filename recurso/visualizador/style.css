@@ -191,7 +191,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 20px;
     overflow: hidden;
 }
 
@@ -226,3 +226,4 @@ button:hover {
     100% { transform: rotate(360deg); }
 
 }
+
