@@ -1,4 +1,4 @@
-/* --- RESET Y ESTRUCTURA BASE --- */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +26,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- INTERACTIVIDAD (Solución al "Mouse") --- */
 a, button, select, .file-label, option, .alternar-menu {
     cursor: pointer !important;
 }
@@ -35,7 +34,7 @@ input[type="text"], textarea {
     cursor: text;
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+
 main {
     flex: 1; 
     display: flex;
@@ -53,7 +52,7 @@ main {
     align-items: center;
 }
 
-.contenedor {
+.contenedor 
     background-color: white;
     max-width: 600px;
     width: 92%; 
@@ -72,7 +71,6 @@ h1 {
     text-align: center;
 }
 
-/* --- ELEMENTOS DE LA HERRAMIENTA (Visualizador HEX) --- */
 .input-y-boton {
     display: flex;
     gap: 10px;
@@ -113,7 +111,6 @@ button:hover {
     border-color: var(--color-primary);
 }
 
-/* --- ÁREA DE RESULTADO (Centrado y Cuadro) --- */
 #resultado-color {
     margin-top: 20px;
     padding: 40px 20px;
@@ -155,7 +152,6 @@ button:hover {
     font-weight: 600;
 }
 
-/* --- SELECTOR DE FORMATOS (Para otras herramientas) --- */
 .selector-formato {
     width: 100%;
     padding: 14px 20px;
@@ -174,7 +170,6 @@ button:hover {
     transition: 0.3s;
 }
 
-/* --- FOOTER Y PUBLICIDAD --- */
 .pie {
     flex-shrink: 0;
     background: white;
@@ -196,11 +191,10 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 50px;
     overflow: hidden;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     main { padding: 80px 0; }
     
@@ -216,7 +210,6 @@ button:hover {
     body { padding-bottom: 130px; }
 }
 
-/* Spinner */
 .spinner {
     display: none;
     width: 40px;
@@ -231,4 +224,5 @@ button:hover {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
 }
