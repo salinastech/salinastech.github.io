@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salinas Tech | Visualizador de Colores</title>
+    <meta name="description" content="Visualiza códigos hexadecimales y convertelos a RGB con un solo click.">
+    <meta name="author" content="Salinas Tech">
+    <meta name="google-adsense-account" content="ca-pub-8116573926720419">
+
+    <meta property="og:title" content="Visualizador de Colores | Salinas Tech">
+    <meta property="og:description"
+        content="Introduce tu código hexadecimal y mira el color al instante con precisión.">
+    <meta name="twitter:image" content="https://i.ibb.co/93V3s9hs/icono.png" />
+
+    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" sizes="192x192" />
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Salinas Tech" />
+    <link rel="manifest" href="icon/site.webmanifest" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8116573926720419"
+        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <header class="barra-navegacion">
+        <div class="contenedor-menu">
+            <a href="../../index.html" class="marca-navegacion">SALINAS TECH</a>
+            <div class="alternar-menu" id="alternar-menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+            <nav class="navegacion-principal" id="menu-principal">
+                <ul id="menu-principal-ul">
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li class="desplegable">
+                        <a href="#" class="alternar-desplegable">Servicios</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="../../disenodigital.html">Diseño Digital</a></li>
+                            <li><a href="../../disenopublicitario.html">Diseño Publicitario</a></li>
+                            <li><a href="../../disenouiux.html">Diseño UI/UX</a></li>
+                            <li><a href="../../animacion.html">Animación</a></li>
+                            <li><a href="../../desarrolloweb.html">Desarrollo Web</a></li>
+                            <li><a href="../../desarrollodesistemasweb.html">Desarrollo de Sistemas Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../productos.html">Productos</a></li>
+                    <li><a href="../../contratar.html">Contratar</a></li>
+                    <li><a href="../../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="seccion-herramienta">
+            <div class="contenedor">
+                <h1>Visualizador de Colores</h1>
+                <p style="text-align:center; margin-bottom: 20px; font-size: 0.9rem; color: #666;">
+                    Ingresa tu código de color para previsualizarlo.
+                </p>
+
+                <div class="input-y-boton">
+                    <input type="text" id="hexInput" placeholder="#FFFFFF" maxlength="7">
+                    <button onclick="verColor()">Ver Color</button>
+                </div><br>
+
+                <center>
+                    <div id="resultado-color">
+                        <div id="visualizador" class="cuadro-color"></div>
+                        <div class="info-valor" id="rgbText">RGB: (255, 255, 255)</div>
+                        <p id="error-msg">Código no válido</p>
+                    </div>
+                </center>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Salinas Tech.<br> Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
