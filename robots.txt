@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://salinastech.com/sitemap.xml
